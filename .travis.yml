@@ -10,10 +10,10 @@ script:
 
 deploy:
         provider: elasticbeanstalk  # depending of the provider
-        region: "us-west-2" # geographic area
+        region: "us-east-2" # geographic area
         app: "docker-react"
-        env: "Docker-react-env"
-        bucket_name: ""
+        env: "DockerReact-env"
+        bucket_name: "elasticbeanstalk-us-east-2-045275166853"
         bucket_path: "docker-react" # usually the same as the app name
         on:
                 branch: master # only trigger deploy when new commit on master
